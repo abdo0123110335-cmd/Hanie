@@ -1,0 +1,31 @@
+name: customs_letter
+description: تطبيق لتوليد خطاب تفويض مخلص جمركي بصيغة PDF على ورقة مروسة.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  pdf: ^3.11.1
+  printing: ^5.13.1
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # (اختياري) لتشغيل الطباعة بدون إنترنت: حمّل خط Cairo وضعه في assets/fonts
+  # ثم أزل علامة # من الأسطر التالية.
+  # assets:
+  #   - assets/fonts/Cairo-Regular.ttf
+  #   - assets/fonts/Cairo-Bold.ttf
